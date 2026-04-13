@@ -1,4 +1,4 @@
-### TRABALHO DE PI - SISTEMA DE VOTAÇÃO 🤖✅🔝
+### TRABALHO DE PI - SISTEMA DE VOTAÇÃO 
 
 NOMES:
 
