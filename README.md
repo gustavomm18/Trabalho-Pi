@@ -1,0 +1,20 @@
+TRABALHO DE PI - SISTEMA DE VOTAÇÃO 
+
+NOMES:
+
+
+ ---- ETAPAS DO READ.ME ----
+
+--> 1 - CAPA 
+
+--> 2 - APRESENTAÇÃO
+
+--> 3 - MENUS
+
+--> 4 - OBJETIVOS
+
+--> 5 - TECNOLOGIAS QUE USAMOS
+
+--> 6 - O QUE CADA UM FEZ / FINALIZAÇÃO
+
+
