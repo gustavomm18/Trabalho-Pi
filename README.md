@@ -12,6 +12,23 @@
 ![Último commit](https://img.shields.io/github/last-commit/:nomedeusuario/:nomedorepositorio)
 ![README bem legal](https://img.shields.io/badge/readme-bem_legal-8A2BE2)
 
+
+  🚀 Introdução
+
+Bem-vindo ao Meu Projeto Incrível! Este projeto foi desenvolvido com o objetivo de [Descreva o objetivo principal do seu projeto aqui, de forma concisa e impactante]. Através da combinação de tecnologias modernas e uma abordagem inovadora, buscamos oferecer uma solução robusta e eficiente para [Mencione o problema que o projeto resolve ou a necessidade que ele atende].
+
+Este README serve como um guia completo para entender a arquitetura, as funcionalidades e como contribuir para o projeto. Sinta-se à vontade para explorar!
+
+<div align="center">
+<img src="https://via.placeholder.com/600x300?text=Imagem+de+Apresentação+do+Projeto" alt="Imagem de Apresentação do Projeto">
+  <p><i>Uma visão geral da interface ou do conceito principal do projeto.</i></p>
+</div>
+
+<img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png" width="200" alt="Ilustração de Computador">
+  <h1><font color="#4CAF50">Fundamentos</font></h1>
+  <p>Um projeto inovador para resolver problemas do mundo real com tecnologia de ponta.</p>   <!-- Badges -->
+  
+
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
 
@@ -124,7 +141,24 @@ Tabela: Votos
       <li>Realize votações</li>
     </ol>
   </div>
-  
+
+  2. Lógica de Negócio e Regras de Votação
+
+As seguintes regras são implementadas para garantir a integridade e a justiça do processo de votação:
+
+•
+Autenticação Obrigatória: Somente usuários devidamente registrados e autenticados podem submeter votos. Isso previne votos anônimos e múltiplos votos de uma mesma pessoa não registrada.
+
+•
+Voto Único por Usuário: Cada usuário tem permissão para registrar apenas um voto em todo o sistema. Esta restrição é imposta através de uma chave única composta (UNIQUE(usuario_id)) na tabela Votos, garantindo que tentativas subsequentes de voto pelo mesmo usuário sejam rejeitadas pelo banco de dados.
+
+•
+Contagem em Tempo Real: Os resultados da votação são calculados dinamicamente a cada consulta, agregando os votos registrados na tabela Votos. Isso assegura que os dados apresentados sejam sempre os mais atualizados e precisos, refletindo o estado atual da votação.
+
+•
+Auditoria e Rastreabilidade: A coluna data_voto registra o exato momento de cada voto, permitindo auditorias detalhadas e a análise de padrões de votação ao longo do tempo. Isso é crucial para a transparência e para identificar qualquer comportamento suspeito.
+
+
 ### 🤖 Linguagens e Tecnologias
 <img 
     align="left" 
