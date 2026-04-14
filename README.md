@@ -30,7 +30,9 @@
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
 
-
+![MySQL](https://img.shields.io/badge/MySQL-Database-lightblue)
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 	NOMES DOS INTEGRANTES👨‍💻:
 <h4 align="left"> 
