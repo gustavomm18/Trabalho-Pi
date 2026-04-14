@@ -1,8 +1,39 @@
-### TRABALHO DE PI - SISTEMA DE VOTAÇÃO 🤖✅🔝 [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome#readme)
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=112&color=gradient&customColorList=23&section=header"/>
+<br>
+</p>
+
+<h1 align='center'> TRABALHO DE PI - SISTEMA DE VOTAÇÃO 🤖✅🔝</h1>
+
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome#readme)
+<h4 align="center">
+	
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome#readme)
+![Linguagem mais utilizada](https://img.shields.io/github/languages/top/:nomedeusuario/:nomedorepositorio)
+![Último commit](https://img.shields.io/github/last-commit/:nomedeusuario/:nomedorepositorio)
+![README bem legal](https://img.shields.io/badge/readme-bem_legal-8A2BE2)
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!IMPORTANT]  
+> <a href="https://drive.google.com/drive/folders/1hJGhQTtzDUzMqRtoIQUx7QTLtCN726ZK?usp=sharing" download>Download my resume</a>
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
 
 
-NOMES:
-<h4 align="center"> 
+
+	NOMES:
+<h4 align="left"> 
 	:construction:  Projeto em construção  :construction:
 </h4>
 <a href="https://opencollective.com/readme-md-generator"><img src="https://opencollective.com/readme-md-generator/individuals.svg?width=890"></a>
@@ -42,3 +73,5 @@ NOMES:
 
 <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="500">
 <br><br>
+
+![Abhinandan Trilokia](https://raw.githubusercontent.com/Trilokia/Trilokia/379277808c61ef204768a61bbc5d25bc7798ccf1/bottom_header.svg)
