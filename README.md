@@ -32,7 +32,7 @@
 
 
 
-	NOMES:
+	NOMES DOS INTEGRANTES👨‍💻:
 <h4 align="left"> 
 	:construction:  Projeto em construção  :construction:
 </h4>
@@ -54,9 +54,76 @@
 
 --> 6 - O QUE CADA UM FEZ / FINALIZAÇÃO
 
+
+  <h2>📌 Funcionalidades</h2>
+  <div class="box">
+    <ul>
+      <li>Cadastro de eleitores</li>
+      <li>Registro de votos</li>
+      <li>Contagem automática</li>
+      <li>Prevenção de votos duplicados</li>
+      <li>Interface simples e intuitiva</li>
+    </ul>
+  </div>
+
+  <h2>🧠 Como funciona o sistema</h2>
+  <div class="box">
+    <p>
+      O sistema utiliza um banco de dados para armazenar:
+    </p>
+    <ul>
+      <li><span class="highlight">Eleitores</span>: dados do usuário</li>
+      <li><span class="highlight">Candidatos</span>: opções de voto</li>
+      <li><span class="highlight">Votos</span>: registro único por eleitor</li>
+    </ul>
+
+    <p>
+      Cada eleitor pode votar apenas <span class="highlight">uma vez</span>, garantindo a integridade do processo.
+    </p>
+  </div>
+
+  <h2>🗄️ Estrutura do Banco de Dados</h2>
+  <div class="box">
+<pre>
+Tabela: Eleitores
+- id (PK)
+- nome
+- cpf
+- votou (boolean)
+
+Tabela: Candidatos
+- id (PK)
+- nome
+- numero
+
+Tabela: Votos
+- id (PK)
+- eleitor_id (FK)
+- candidato_id (FK)
+</pre>
+  </div>
+
+  <h2>🚀 Tecnologias utilizadas</h2>
+  <div class="box">
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>MySQL</li>
+      <li>Lógica de programação</li>
+    </ul>
+  </div>
+
+  <h2>📦 Como usar</h2>
+  <div class="box">
+    <ol>
+      <li>Clone o repositório</li>
+      <li>Configure o banco de dados</li>
+      <li>Execute o sistema</li>
+      <li>Realize votações</li>
+    </ol>
+  </div>
+  
 ### 🤖 Linguagens e Tecnologias
-
-
 <img 
     align="left" 
     alt="Python" 
