@@ -1,0 +1,40 @@
+titulo = input("Digite o título de eleitor (12 números): ")
+
+# Verifica tamanho
+if len(titulo) != 12:
+    print("Título inválido ❌")
+else:
+    # transforma em lista de números
+    nums = []
+    for i in range(12):
+        nums.append(int(titulo[i]))
+
+    # 🔹 Primeiro dígito
+    pesos = [2,3,4,5,6,7,8,9]
+    soma = 0
+
+    for i in range(8):
+        soma = soma + nums[i] * pesos[i]
+
+    resto = soma % 11
+
+    if resto == 10:
+        dv1 = 0
+    else:
+        dv1 = resto
+
+    # 🔹 Segundo dígito
+    soma2 = (nums[8] * 7) + (nums[9] * 8) + (dv1 * 9)
+
+    resto2 = soma2 % 11
+
+    if resto2 == 10:
+        dv2 = 0
+    else:
+        dv2 = resto2
+
+    # 🔍 Verificação final
+    if nums[10] == dv1 and nums[11] == dv2:
+        print("Título válido ✅")
+    else:
+        print("Título inválido ❌")
