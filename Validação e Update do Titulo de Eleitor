@@ -1,0 +1,22 @@
+import mysql.connector
+
+# conexão
+con = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="",
+    database="votacao"
+)
+
+cursor = con.cursor()
+
+cpf = input("Digite o CPF do eleitor: ")
+novo_nome = input("Digite o novo nome: ")
+
+sql = "UPDATE eleitores SET nome = %s WHERE cpf = %s"
+valores = (novo_nome, cpf)
+
+cursor.execute(sql, valores)
+con.commit()
+
+print("Dados atualizados com sucesso ✅")
