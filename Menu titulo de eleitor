@@ -2,3 +2,9 @@ def buscar_eleitor(titulo):
     for eleitor in eleitores:
         if eleitor[0] == titulo:
             return eleitor
+def cadastrar():
+    titulo = input("Digite o título (12 números): ")
+
+    if len(titulo) != 12 or not titulo.isdigit():
+        print("Título inválido ❌")
+        return
