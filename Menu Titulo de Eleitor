@@ -14,6 +14,7 @@ while True:
     elif opcao == "3":
         consultar()
     elif opcao == "4":
+        print("Encerrando...")
         break
     else:
         print("Opção inválida ❌")
