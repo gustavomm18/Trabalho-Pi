@@ -14,58 +14,53 @@ def buscar_eleitor(titulo):
     for eleitor in eleitores:
         if eleitor[0] == titulo:
             return eleitor
+    return None
+
 
 def cadastrar():
     titulo = input("Digite o título (12 números): ")
 
     if len(titulo) != 12 or not titulo.isdigit():
-        print("Título inválido❌ ")
+        print("Título inválido ❌")
         return
 
-eleitor_existente = buscar_eleitor(titulo)
+    eleitor_existente = buscar_eleitor(titulo)
 
-chave = gerar_chave()
-novo = [titulo, chave, False]
+    if eleitor_existente:
+        print("Título já cadastrado ✅")
+        print("Chave:", eleitor_existente[1])
+        print("Já votou:", "Sim✅" if eleitor_existente[2] else "Não❌")
+        return
+
+    chave = gerar_chave()
+    novo = [titulo, chave, False]
     eleitores.append(novo)
 
-    print("\nEleitor cadastrado com sucesso ✅")
-    print(" Sua chave é:", chave)
+    print("Eleitor cadastrado com sucesso ✅")
+    print("Sua chave é:", chave)
 
-if eleitor_existente:
-   if eleitor_existente:
-      print(" Título já cadastrado✅")
-
-   if eleitor_existente[1] is not None:
-        print(" Chave:", eleitor_existente[1])
-    else:
-      print(" Já votou:", "Sim✅" if eleitor_existente[2] else "Não❌")
-      return
- else:
-  print("Cadastro ainda não realizado❌")
-  print(" Chave:","ainda não foi gerada❌.Finalize o Cadastro")
 
 def votar():
-if not eleitor:
-   print("Eleitor não cadastrado ❌")
-     return
-else:
-  titulo = input("Digite o título: ")
-  chave = input("Digite a chave: ")
+    titulo = input("Digite o título: ")
+    chave = input("Digite a chave: ")
 
-if eleitor[0] != titulo:
-        print("Titulo incorreta ❌")
+    eleitor = buscar_eleitor(titulo)
+
+    if not eleitor:
+        print("Eleitor não cadastrado ❌")
         return
 
-  if eleitor[1] != chave:
+    if eleitor[1] != chave:
         print("Chave incorreta ❌")
         return
 
-  if eleitor[2]:
-        print("Você já votou ✅")
+    if eleitor[2]:
+        print("Você já votou ❌")
         return
-    
+
     eleitor[2] = True
     print("Voto registrado com sucesso ✅")
+
 
 def consultar():
     titulo = input("Digite o título: ")
@@ -73,10 +68,11 @@ def consultar():
     eleitor = buscar_eleitor(titulo)
 
     if eleitor:
-        print("\n Dados do eleitor:")
+        print("\nDados do eleitor:")
         print("Título:", eleitor[0])
         print("Chave:", eleitor[1])
         print("Já votou:", "Sim✅" if eleitor[2] else "Não❌")
     else:
         print("Eleitor não encontrado ❌")
+
 
