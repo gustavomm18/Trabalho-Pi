@@ -1,3 +1,15 @@
+import random
+import string
+
+eleitores = []
+
+def gerar_chave():
+    caracteres = string.ascii_letters + string.digits
+    chave = ""
+    for i in range(6):
+        chave += random.choice(caracteres)
+    return chave
+
 def buscar_eleitor(titulo):
     for eleitor in eleitores:
         if eleitor[0] == titulo:
@@ -10,14 +22,41 @@ def cadastrar():
         print("Título inválido❌ ")
         return
 
-if eleitor_existente:
-    print(" Este título já está cadastrado!")
+eleitor_existente = buscar_eleitor(titulo)
+chave = gerar_chave()
 
-    if eleitor_existente[1] is not None:
+if eleitor_existente:
+   if eleitor_existente:
+      print(" Título já cadastrado✅")
+
+   if eleitor_existente[1] is not None:
         print(" Chave:", eleitor_existente[1])
     else:
-        print(" Chave ainda não definida❌")
+      print(" Já votou:", "Sim✅" if eleitor_existente[2] else "Não❌")
+      return
+ else:
+  print("Cadastro ainda não realizado❌")
+  print(" Chave:","ainda não foi gerada❌.Finalize o Cadastro")
 
-    print("🗳️ Já votou:", "Sim✅" if eleitor_existente[2] else "Não❌")
-    return
+def votar():
+if not eleitor:
+   print("Eleitor não cadastrado ❌")
+     return
+else:
+  titulo = input("Digite o título: ")
+  chave = input("Digite a chave: ")
 
+if eleitor[1] != titulo:
+        print("Titulo incorreta ❌")
+        return
+
+  if eleitor[1] != chave:
+        print("Chave incorreta ❌")
+        return
+
+  if eleitor[2]:
+        print("Você já votou ✅")
+        return
+    
+    eleitor[2] = True
+    print("Voto registrado com sucesso ✅")
