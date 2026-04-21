@@ -1,0 +1,19 @@
+while True:
+    print("\n===== SISTEMA DE VOTAÇÃO =====")
+    print("1 - Cadastrar eleitor")
+    print("2 - Votar")
+    print("3 - Consultar eleitor")
+    print("4 - Sair")
+
+    opcao = input("Escolha: ")
+
+    if opcao == "1":
+        cadastrar()
+    elif opcao == "2":
+        votar()
+    elif opcao == "3":
+        consultar()
+    elif opcao == "4":
+        break
+    else:
+        print("Opção inválida ❌")
