@@ -12,7 +12,7 @@ while opçao != 4:
     if opcao == "1":
         cadastrar()
     elif opcao == "2":
-        votar()
+        votar()      #alterar o votar() para outro menu de votação existente
     elif opcao == "3":
         consultar()
     elif opcao == "4":
