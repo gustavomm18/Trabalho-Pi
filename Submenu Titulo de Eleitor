@@ -1,3 +1,5 @@
+def menu_eleitor():
+
 while opçao != 4:
     print("\n===== SISTEMA DE VOTAÇÃO =====")
     print("1 - Cadastrar eleitor")
