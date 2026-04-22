@@ -1,4 +1,4 @@
-while True:
+while opçao != 4:
     print("\n===== SISTEMA DE VOTAÇÃO =====")
     print("1 - Cadastrar eleitor")
     print("2 - Votar")
@@ -18,3 +18,8 @@ while True:
         break
     else:
         print("Opção inválida ❌")
+   try: 
+        opcao = int(input("Escolha uma opcao: "))
+   except ValueError: 
+        opçao = 0
+        
