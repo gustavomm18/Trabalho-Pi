@@ -22,4 +22,5 @@ while opçao != 4:
         opcao = int(input("Escolha uma opcao: "))
    except ValueError: 
         opçao = 0
-        
+
+menu_principal()
