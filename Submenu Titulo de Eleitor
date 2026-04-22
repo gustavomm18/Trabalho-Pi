@@ -16,11 +16,11 @@ while opçao != 4:
     elif opcao == "4":
         print("Encerrando...")
         break
+
+menu_principal()
     else:
         print("Opção inválida ❌")
    try: 
         opcao = int(input("Escolha uma opcao: "))
    except ValueError: 
         opçao = 0
-
-menu_principal()
