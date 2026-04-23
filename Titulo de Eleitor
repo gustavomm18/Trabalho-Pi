@@ -16,6 +16,18 @@ def buscar_eleitor(titulo):
             return eleitor
     return None
 
+nums = [int(n) for n in titulo]
+
+    pesos = [2,3,4,5,6,7,8,9]
+    soma = sum(nums[i] * pesos[i] for i in range(8))
+    resto = soma % 11
+    dv1 = 0 if resto == 10 else resto
+
+    soma2 = (nums[8]*7) + (nums[9]*8) + (dv1*9)
+    resto2 = soma2 % 11
+    dv2 = 0 if resto2 == 10 else resto2
+
+    return nums[10] == dv1 and nums[11] == dv2
 
 def cadastrar():
     titulo = input("Digite o título (12 números): ")
